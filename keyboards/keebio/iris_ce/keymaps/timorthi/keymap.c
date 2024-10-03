@@ -70,3 +70,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   )
 };
+
+uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LSFT_T(KC_SPC):
+        case RSFT_T(KC_BSPC):
+            // Remove quick tap term for shift keys
+            return 0;
+        default:
+            return QUICK_TAP_TERM;
+    }
+}
+
