@@ -81,4 +81,3 @@ uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
             return QUICK_TAP_TERM;
     }
 }
-
