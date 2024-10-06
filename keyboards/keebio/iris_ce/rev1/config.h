@@ -20,4 +20,4 @@
 #define PERMISSIVE_HOLD
 #define QUICK_TAP_TERM_PER_KEY // Defaults to TAPPING_TERM if not set
 #define ONESHOT_TAP_TOGGLE 2 // Double tap OSMs to lock. This is affected by the quick tap term.
-#define ONESHOT_TIMEOUT 1500  // Time (in ms) before the one shot key is released
+#define ONESHOT_TIMEOUT 2000  // Time (in ms) before the one shot key is released
