@@ -71,6 +71,16 @@ OSM(MOD_LCTL), KC_Z,   KC_X,    KC_C,    KC_D,    KC_V,    KC_TAB,           KC_
   )
 };
 
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LSFT_T(KC_SPC):
+        case RSFT_T(KC_BSPC):
+            return 200;
+        default:
+            return TAPPING_TERM;
+    }
+}
+
 uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case LSFT_T(KC_SPC):

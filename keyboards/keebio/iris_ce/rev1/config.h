@@ -17,6 +17,7 @@
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 
 #define TAPPING_TERM 180
+#define TAPPING_TERM_PER_KEY
 #define PERMISSIVE_HOLD
 #define QUICK_TAP_TERM_PER_KEY // Defaults to TAPPING_TERM if not set
 #define ONESHOT_TAP_TOGGLE 2 // Double tap OSMs to lock. This is affected by the quick tap term.
