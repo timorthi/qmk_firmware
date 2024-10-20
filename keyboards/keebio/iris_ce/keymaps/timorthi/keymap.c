@@ -32,11 +32,11 @@ OSM(MOD_LCTL), KC_Z,   KC_X,    KC_C,    KC_D,    KC_V,    KC_TAB,           KC_
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
      KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                              KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_TRNS, KC_NO,   KC_LT,   KC_GT,   KC_QUOT, KC_DQUO,                            KC_PIPE, KC_COLN, KC_LBRC, KC_RBRC, KC_NO,   KC_NO,
+     KC_TRNS, KC_NO,   KC_LT,   KC_GT,   KC_QUOT, KC_DQUO,                            KC_PIPE, KC_COLN, KC_LBRC, KC_RBRC, KC_TRNS, KC_TRNS,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_TRNS, KC_PERC, KC_MINS, KC_PLUS, KC_EQL,  KC_EXLM,                            KC_GRV, KC_SCLN, KC_LPRN, KC_RPRN, KC_CIRC, KC_NO,
+     KC_TRNS, KC_PERC, KC_MINS, KC_PLUS, KC_EQL,  KC_EXLM,                            KC_GRV,  KC_SCLN, KC_LPRN, KC_RPRN, KC_CIRC, KC_TRNS,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_TRNS, KC_NO,   KC_ASTR, KC_BSLS, KC_AT,   KC_HASH, KC_TRNS,          KC_TRNS, KC_AMPR, KC_DLR,  KC_LCBR, KC_RCBR, KC_NO,   KC_NO,
+     KC_TRNS, KC_NO,   KC_ASTR, KC_BSLS, KC_AT,   KC_HASH, KC_TRNS,          KC_TRNS, KC_AMPR, KC_DLR,  KC_LCBR, KC_RCBR, KC_TRNS, KC_TRNS,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS, MO(_SYS), KC_TRNS
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
