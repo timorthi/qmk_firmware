@@ -12,6 +12,19 @@ enum custom_layers {
      _SYS
 };
 
+// Left-hand home row mods
+#define CTL_A LCTL_T(KC_A)
+#define ALT_R LALT_T(KC_R)
+#define GUI_S LGUI_T(KC_S)
+#define LSHFT_T LSFT_T(KC_T)
+
+// Right-hand home row mods
+#define RSHFT_N RSFT_T(KC_N)
+#define GUI_E RGUI_T(KC_E)
+#define ALT_I LALT_T(KC_I)
+#define CTL_O RCTL_T(KC_O)
+
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_BASE] = LAYOUT(
@@ -20,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                               KC_J,    KC_L,    KC_U,    KC_Y,    KC_MINS, KC_UNDS,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LGUI, KC_A,   KC_R,    KC_S,    KC_T,    KC_G,                               KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_TILD,
+     KC_LGUI, CTL_A,   ALT_R,   GUI_S,   LSHFT_T,    KC_G,                            KC_M,    RSHFT_N, GUI_E,   ALT_I,   CTL_O,   KC_TILD,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
 OSM(MOD_LCTL), KC_Z,   KC_X,    KC_C,    KC_D,    KC_V,    KC_TAB,           KC_DEL,  KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_QUES,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
