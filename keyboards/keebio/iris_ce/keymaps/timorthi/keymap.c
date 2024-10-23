@@ -12,18 +12,26 @@ enum custom_layers {
      _SYS
 };
 
-// Left-hand home row mods
-#define CTL_A LCTL_T(KC_A)
-#define ALT_R LALT_T(KC_R)
-#define GUI_S LGUI_T(KC_S)
-#define LSHFT_T LSFT_T(KC_T)
+// Left-hand bottom row mods
+#define CTL_X LCTL_T(KC_X)
+#define ALT_C LALT_T(KC_C)
+#define GUI_D LGUI_T(KC_D)
 
-// Right-hand home row mods
-#define RSHFT_N RSFT_T(KC_N)
-#define GUI_E RGUI_T(KC_E)
-#define ALT_I LALT_T(KC_I)
-#define CTL_O RCTL_T(KC_O)
+// Right-hand bottom row mods
+#define GUI_H RGUI_T(KC_H)
+#define ALT_COM LALT_T(KC_COMM)
+#define CTL_DOT RCTL_T(KC_DOT)
 
+// Left thumb cluster
+#define OSM_LALT OSM(MOD_LALT)
+#define SYM_ESC LT(_SYM,KC_ESC)
+#define SFT_SPC LSFT_T(KC_SPC)
+
+// Right thumb cluster
+#define SFT_BSPC RSFT_T(KC_BSPC)
+
+// Other
+#define OSM_LCTL OSM(MOD_LCTL)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -31,13 +39,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
      KC_NO,   KC_NO,   KC_MPRV, KC_MPLY, KC_MNXT, KC_NO,                              KC_NO,   KC_MUTE, KC_VOLD, KC_VOLU, KC_NO,   KC_NO,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                               KC_J,    KC_L,    KC_U,    KC_Y,    KC_MINS, KC_UNDS,
+     KC_NO,   KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                               KC_J,    KC_L,    KC_U,    KC_Y,    KC_MINS, KC_UNDS,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LGUI, CTL_A,   ALT_R,   GUI_S,   LSHFT_T,    KC_G,                            KC_M,    RSHFT_N, GUI_E,   ALT_I,   CTL_O,   KC_TILD,
+     KC_TAB,  KC_A,    KC_R,    KC_S,    KC_T,    KC_G,                               KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_TILD,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-OSM(MOD_LCTL), KC_Z,   KC_X,    KC_C,    KC_D,    KC_V,    KC_TAB,           KC_DEL,  KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_QUES,
+     KC_NO,   KC_Z,    CTL_X,   ALT_C,   GUI_D,   KC_V,    CW_TOGG,          KC_DEL,  KC_K,    GUI_H,   ALT_COM, CTL_DOT, KC_SLSH, KC_QUES,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                              OSM(MOD_LALT), LT(_SYM,KC_ESC), LSFT_T(KC_SPC),    RSFT_T(KC_BSPC), MO(_NUMNAV), KC_ENT
+                                    KC_NO,   SYM_ESC, SFT_SPC,                  SFT_BSPC,MO(_NUMNAV),KC_ENT
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
