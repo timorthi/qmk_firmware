@@ -15,6 +15,9 @@ enum custom_layers {
 #define CTL_X LCTL_T(KC_X)
 #define ALT_C LALT_T(KC_C)
 #define GUI_D LGUI_T(KC_D)
+#define CTL_1 LCTL_T(KC_1)
+#define ALT_2 LALT_T(KC_2)
+#define GUI_3 LGUI_T(KC_3)
 
 // Right-hand bottom row mods
 #define GUI_H RGUI_T(KC_H)
@@ -114,7 +117,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_NO,   KC_0,    KC_4,    KC_5,    KC_6,    KC_NO,                              KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_NO,   KC_NO,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_NO,   KC_NO,   KC_1,    KC_2,    KC_3,    KC_NO,   KC_TRNS,          KC_TRNS, KC_NO,   KC_NO,   KC_END,  KC_PGDN, KC_NO,   KC_NO,
+     KC_NO,   KC_NO,   CTL_1,   ALT_2,   GUI_3,   KC_NO,   KC_TRNS,          KC_TRNS, KC_NO,   KC_NO,   KC_END,  KC_PGDN, KC_NO,   KC_NO,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     KC_TRNS, MO(_SYS), KC_TRNS,                  KC_TRNS, KC_TRNS, KC_TRNS
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
