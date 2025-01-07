@@ -18,5 +18,6 @@
 #define TAPPING_TERM_PER_KEY
 #define PERMISSIVE_HOLD
 #define QUICK_TAP_TERM_PER_KEY // Defaults to TAPPING_TERM if not set
+#define LAYER_LOCK_IDLE_TIMEOUT 60000  // Turn off after 60 seconds.
 
 #define DEBOUNCE 10

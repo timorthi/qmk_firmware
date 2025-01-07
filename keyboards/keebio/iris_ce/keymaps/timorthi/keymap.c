@@ -103,7 +103,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_NO,   KC_PERC, KC_MINS, KC_PLUS, KC_EQL,  KC_EXLM,                            KC_GRV,  KC_SCLN, KC_LPRN, KC_RPRN, KC_CIRC, KC_TRNS,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_NO,   KC_NO,   KC_ASTR, KC_BSLS, KC_AT,   KC_HASH, KC_TRNS,          KC_TRNS, KC_AMPR, KC_DLR,  KC_LCBR, KC_RCBR, KC_TRNS, KC_TRNS,
+     QK_LLCK, KC_NO,   KC_ASTR, KC_BSLS, KC_AT,   KC_HASH, KC_TRNS,          KC_TRNS, KC_AMPR, KC_DLR,  KC_LCBR, KC_RCBR, KC_TRNS, KC_TRNS,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS, MO(_SYS), KC_TRNS
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -117,7 +117,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_NO,   KC_0,    KC_4,    KC_5,    KC_6,    KC_NO,                              KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_NO,   KC_NO,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_NO,   KC_NO,   CTL_1,   ALT_2,   GUI_3,   KC_NO,   KC_TRNS,          KC_TRNS, KC_NO,   KC_NO,   KC_END,  KC_PGDN, KC_NO,   KC_NO,
+     KC_NO,   KC_NO,   CTL_1,   ALT_2,   GUI_3,   KC_NO,   KC_TRNS,          KC_TRNS, KC_NO,   KC_NO,   KC_END,  KC_PGDN, KC_NO,   QK_LLCK,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     KC_TRNS, MO(_SYS), KC_TRNS,                  KC_TRNS, KC_TRNS, KC_TRNS
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
